@@ -4,20 +4,28 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const App2 = ()=>{
-  // return <h1>hello Thapa</h1>
-  // return React.createElement('h1',{"name":"aks"},"hi,akshay");
   return (
     <div>
-      <img src='test.jpg' alt='test.jpg' width="40%" height="50%"></img>
-      <h1>Name:Therma</h1>
-      <h2>Rating: 8.2</h2>
-      <p>
-        Summary:dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg
-        ahjdbajdadabdnabdjabda
-      </p>
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
     </div>
   );
 };
+
+function NetflixSeries(){
+  return (<div>
+    <img src='test.jpg' alt='test.jpg' width="40%" height="50%"></img>
+    <h1>Name:Therma</h1>
+    <h2>Rating: 8.2</h2>
+    <p>
+      Summary:dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg
+      ahjdbajdadabdnabdjabda
+    </p>
+  </div>);
+}
 
 function App() {
   const [count, setCount] = useState(0)
