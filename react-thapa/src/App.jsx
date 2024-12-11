@@ -16,13 +16,23 @@ const App2 = ()=>{
 };
 
 function NetflixSeries(){
+  const name="Thedrma";
+  const rating=8.2;
+  const summary="dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg ahjdbajdadabdnabdjabda"
+  
+  const retGenre=()=>{
+    const genre="romCom"
+    return genre;
+  }
   return (<div>
     <img src='test.jpg' alt='test.jpg' width="40%" height="50%"></img>
-    <h1>Name:Therma</h1>
-    <h2>Rating: 8.2</h2>
+    <h1>Name:{name} </h1>
+    <h2>Rating: {rating} </h2>
     <p>
-      Summary:dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg
-      ahjdbajdadabdnabdjabda
+      Summary:{summary}
+    </p>
+    <p>
+      Genre:{retGenre()}
     </p>
   </div>);
 }
