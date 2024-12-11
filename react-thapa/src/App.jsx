@@ -5,13 +5,13 @@ import './App.css'
 
 const App2 = ()=>{
   return (
-    <div>
+    <>
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
-    </div>
+    </>
   );
 };
 
