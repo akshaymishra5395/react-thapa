@@ -19,10 +19,15 @@ function NetflixSeries(){
   const name="Thedrma";
   const rating=8.2;
   const summary="dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg ahjdbajdadabdnabdjabda"
-  
+  const age=19
+
   const retGenre=()=>{
     const genre="romCom"
     return genre;
+  }
+  const canWatch=()=>{
+    if(age>=18) return "Watch Now";
+    return "Not Available";
   }
   return (<div>
     <img src='test.jpg' alt='test.jpg' width="40%" height="50%"></img>
@@ -34,6 +39,7 @@ function NetflixSeries(){
     <p>
       Genre:{retGenre()}
     </p>
+    <button>{canWatch()}</button>
   </div>);
 }
 
