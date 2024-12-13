@@ -9,8 +9,6 @@ const App2 = ()=>{
     <>
     <Header />
     <NetflixSeries />
-    <NetflixSeries />
-    <NetflixSeries />
     <Footer />
     </>
   );
