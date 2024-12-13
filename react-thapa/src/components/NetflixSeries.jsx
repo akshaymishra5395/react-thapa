@@ -1,28 +1,27 @@
-function NetflixSeries() {
-  const name = "Thedrma";
-  const rating = 8.2;
-  const summary =
-    "dakdhakjdahkjd akjhdakjdakjdh ajkdb akjdbakjdakjdbadajdg ahjdbajdadabdnabdjabda";
-  const age = 19;
+import seriesData from "../api/seriesData.json"
 
-  const retGenre = () => {
-    const genre = "romCom";
-    return genre;
-  };
-  const canWatch = () => {
-    if (age >= 18) return "Watch Now";
-    return "Not Available";
-  };
+function NetflixSeries() {
   return (
-    <div>
-      <img src="test.jpg" alt="test.jpg" width="40%" height="50%"></img>
-      <h1>Name:{name} </h1>
-      <h2>Rating: {rating} </h2>
-      <p>Summary:{summary}</p>
-      <p>Genre:{retGenre()}</p>
-      <button>{canWatch()}</button>
-    </div>
-  );
+    <ul>
+    {seriesData.map((cur)=>{
+        return (
+            <li key={cur.id}>
+                <div>
+                    <img src={cur.img_url} alt={cur.name} width="40%" height="50%" />
+                </div>
+                <h2>Name:{cur.name} </h2>
+                <h3>Rating: {cur.rating} </h3>
+                <p>Summary:{cur.description}</p>
+                <p>Genre:{cur.genre}</p>
+                <p>Cast:{cur.cast}</p>
+                <a href={cur.watch_url} target="_blank">
+                    <button>Watch Now</button>
+                </a>
+            </li>
+        )})
+    }
+    </ul>
+    );
 }
 export default NetflixSeries;
 
