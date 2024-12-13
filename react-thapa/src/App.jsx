@@ -3,12 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NetflixSeries,{Header,Footer} from './components/NetflixSeries'
-
+import {Profile} from "./components/Profile"
 const App2 = ()=>{
   return (
     <>
     <Header />
-    <NetflixSeries />
+    {/* <NetflixSeries /> */}
+    <Profile />
     <Footer />
     </>
   );
