@@ -1,5 +1,5 @@
-export const SeriesCard = (props) =>{
-    const {id,img_url,name,rating,description,genre,cast,watch_url} = props.curEle
+export const SeriesCard = ({curEle}) =>{
+    const {id,img_url,name,rating,description,genre,cast,watch_url} = curEle
     return (
         <li key={id}>
             <div>
