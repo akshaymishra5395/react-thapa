@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NetflixSeries,{Header,Footer} from './components/NetflixSeries'
 import {Profile} from "./components/Profile"
+import "./components/Netflix.css"
+
 const App2 = ()=>{
   return (
-    <>
-    <Header />
-    {/* <NetflixSeries /> */}
-    <Profile />
-    <Footer />
-    </>
+    <section className="container">
+      <h1 className="card-heading">List of Best Netflix Series</h1>
+    <NetflixSeries />
+    {/* <Profile /> */}
+    </section>
   );
 };
 

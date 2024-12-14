@@ -3,7 +3,7 @@ import {SeriesCard} from "./SeriesCard"
 
 function NetflixSeries() {
   return (
-    <ul>
+    <ul className="grid grid-three--cols">
     {seriesData.map((curEle)=>{
         return (
             <SeriesCard key={curEle.id} curEle={curEle} />
